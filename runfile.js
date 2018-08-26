@@ -7,11 +7,12 @@ services include: db, api, app
 commands include: dev, prod, test
 */
 
-const { run, options } = require('runjs')
 const network = require('./run/network')
 const db = require('./run/db')
+const api = require('./run/api')
 
 module.exports = {
   network,
-  db
+  db,
+  api
 }

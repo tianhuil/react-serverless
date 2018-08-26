@@ -1,0 +1,7 @@
+{
+  "API_TAG": "pgt-api-tag",
+  "API_NAME": "pgt-api-name",
+  "API_WORKDIR": "/var/workdir/api",
+  "API_HOST": "localhost",
+  "API_PORT": 5001
+}

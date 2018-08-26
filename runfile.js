@@ -9,7 +9,9 @@ commands include: dev, prod, test
 
 const { run, options } = require('runjs')
 const network = require('./run/network')
+const db = require('./run/db')
 
 module.exports = {
-  network
+  network,
+  db
 }

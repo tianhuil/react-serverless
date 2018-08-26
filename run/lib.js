@@ -1,3 +1,6 @@
+const fs = require("fs")
+const path = require("path")
+
 const { run, options, help } = require('runjs')
 
 function runIgnoreError(cmd, options) {
@@ -5,9 +8,20 @@ function runIgnoreError(cmd, options) {
     .catch(_ => 0)
 }
 
+function runAsync(cmd, options) {
+  return run(cmd, {...options, async: true})
+}
+
+function loadConfig(file) {
+  const configPath = path.join(__dirname, file)
+  return JSON.parse(fs.readFileSync(configPath, 'utf8'))
+}
+
 module.exports = {
-  run,
+  runSync,
   runIgnoreError,
+  runAsync,
   options,
-  help
+  help,
+  loadConfig
 }

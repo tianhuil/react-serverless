@@ -1,10 +1,6 @@
-const fs = require("fs")
-const path = require('path')
+const { run, runIgnoreError, loadConfig } = require('./lib')
 
-const { run, runIgnoreError } = require('./lib')
-
-const configPath = path.join(__dirname, './network.dev.json')
-const config = JSON.parse(fs.readFileSync(configPath, 'utf8'))
+const config = loadConfig('./network.dev.json')
 
 function dev() {
   runIgnoreError(`docker network rm ${config.NETWORK_NAME}`)

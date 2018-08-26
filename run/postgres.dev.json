@@ -1,0 +1,7 @@
+{
+  "POSTGRES_USER":"postgres_user",
+  "POSTGRES_PASSWORD":"password",
+  "POSTGRES_DB":"postgres",
+  "POSTGRES_HOST":"postgres-host",
+  "POSTGRES_PORT":5432
+}

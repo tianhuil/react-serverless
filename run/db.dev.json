@@ -1,0 +1,5 @@
+{
+  "DB_TAG":"pgt-db-tag",
+  "DB_WORKDIR":"/var/workdir/db",
+  "DB_NAME":"pgt-postgres-name"
+}

@@ -18,7 +18,7 @@ function loadConfig(file) {
 }
 
 module.exports = {
-  runSync,
+  run,
   runIgnoreError,
   runAsync,
   options,

@@ -1,0 +1,25 @@
+{
+  "name": "react-serverless",
+  "version": "1.0.0",
+  "description": "build tools",
+  "main": "runfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianhuil/react-serverless.git"
+  },
+  "author": "Tianhui Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianhuil/react-serverless/issues"
+  },
+  "homepage": "https://github.com/tianhuil/react-serverless#readme",
+  "devDependencies": {
+    "runjs": "^4.3.2"
+  },
+  "dependencies": {
+    "npm": "^6.4.0"
+  }
+}

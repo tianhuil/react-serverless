@@ -1,0 +1,8 @@
+{
+  "APP_NAME": "app",
+  "APP_WORKDIR": "/var/app",
+  "APP_TAG_DEV": "app:dev",
+  "APP_TAG_PROD": "app:prod",
+  "APP_PORT": "9001",
+  "APP_HOST": "app-host"
+}

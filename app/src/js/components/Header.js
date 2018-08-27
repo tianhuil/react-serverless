@@ -129,9 +129,14 @@ const Logout = (props) => (
     </button>
     <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
       <Query query={QueryUser}>
-        {({ error, data, client }) => (data.currentPerson) ?
+        {({ error, data, client }) => {
+          if (error) {
+            return null
+          }
+          return (data.currentPerson) ?
            <h6 className="dropdown-header">{data.currentPerson.fullName}</h6> : null
-         }
+          }
+        }
        </Query>
       <Link className="dropdown-item" to="/profile">Profile</Link>
       <UserConsumer>

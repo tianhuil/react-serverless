@@ -4,7 +4,6 @@ ARG API_WORKDIR
 
 WORKDIR $API_WORKDIR
 COPY package*.json $API_WORKDIR/
-COPY package-lock.json $API_WORKDIR/
 RUN npm install
 
 # Cache installation before
